@@ -1,1 +1,5 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: lavanda.gr
+Token: 2db8d91caf55d66a42c01d1ef582be48c31aaff3e3efbf5c44f424140c483d30
 
