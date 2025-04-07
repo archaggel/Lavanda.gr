@@ -1,9 +1,4 @@
 $(window).on("load", function () {
-	$(document).ready(function () {
-
-    // Existing code...
-
-
 	$(".loader .inner").fadeOut(500, function () {
 		$(".loader").fadeOut(750);
 
