@@ -148,7 +148,7 @@ $(document).ready(function () {
 
 
 	}
-// === Scroll-based video autoplay ===
+	// === Scroll-based video autoplay ===
 	const videos = document.querySelectorAll('.scroll-video');
 
 	const observer = new IntersectionObserver((entries) => {
@@ -168,6 +168,5 @@ $(document).ready(function () {
 	videos.forEach(video => {
 		observer.observe(video);
 	});
-	
 
 });
