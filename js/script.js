@@ -29,7 +29,7 @@ $(document).ready(function () {
 
 	var typed = new Typed(".typed", {
 		strings: ["Lavandula angustifolia", "Lavandula latifolia",],
-		typeSpeed: 70,
+		typeSpeed: 60,
 		loop: true,
 		startDelay: 1000,
 		showCursor: false
@@ -148,7 +148,7 @@ $(document).ready(function () {
 
 
 	}
-	// === Scroll-based video autoplay ===
+		// === Scroll-based video autoplay ===
 	const videos = document.querySelectorAll('.scroll-video');
 
 	const observer = new IntersectionObserver((entries) => {
@@ -168,5 +168,6 @@ $(document).ready(function () {
 	videos.forEach(video => {
 		observer.observe(video);
 	});
+
 
 });
