@@ -2,23 +2,7 @@ $(window).on("load", function () {
 	$(document).ready(function () {
 
     // Existing code...
-    
-    // Autoplay video when scrolling into view
-    let video = document.getElementById("myVideo");
 
-    let observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                video.play();
-            } else {
-                video.pause();
-            }
-        });
-    }, { threshold: 0.5 }); // 50% of the video must be visible
-
-    observer.observe(video);
-
-});
 
 	$(".loader .inner").fadeOut(500, function () {
 		$(".loader").fadeOut(750);
@@ -169,7 +153,7 @@ $(document).ready(function () {
 
 
 	}
-		// === Scroll-based video autoplay ===
+// === Scroll-based video autoplay ===
 	const videos = document.querySelectorAll('.scroll-video');
 
 	const observer = new IntersectionObserver((entries) => {
@@ -183,13 +167,12 @@ $(document).ready(function () {
 			}
 		});
 	}, {
-		threshold: 0.5 // 50% visible before playing
+		threshold: 0.5 // Adjust if needed
 	});
 
 	videos.forEach(video => {
 		observer.observe(video);
 	});
-
 	
 
 });
